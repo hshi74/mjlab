@@ -1,7 +1,7 @@
 import gymnasium as gym
 
 gym.register(
-  id="mjlab_velocity_rough_toddlerbot_2xc",
+  id="Mjlab-Velocity-Rough-ToddlerBot-2xc",
   entry_point="mjlab.envs:ManagerBasedRlEnv",
   disable_env_checker=True,
   kwargs={
@@ -11,7 +11,7 @@ gym.register(
 )
 
 gym.register(
-  id="mjlab_velocity_rough_toddlerbot_2xc_play",
+  id="Mjlab-Velocity-Rough-ToddlerBot-2xc-Play",
   entry_point="mjlab.envs:ManagerBasedRlEnv",
   disable_env_checker=True,
   kwargs={
@@ -22,21 +22,21 @@ gym.register(
 
 
 gym.register(
-  id="mjlab_velocity_flat_toddlerbot_2xc",
+  id="Mjlab-Velocity-Flat-ToddlerBot-2xc",
   entry_point="mjlab.envs:ManagerBasedRlEnv",
   disable_env_checker=True,
   kwargs={
     "env_cfg_entry_point": f"{__name__}.flat_env_cfg:ToddlerBotFlatEnvCfg",
-    "rl_cfg_entry_point": f"{__name__}.rl_cfg:ToddlerBotFlatPPORunnerCfg",
+    "rl_cfg_entry_point": f"{__name__}.rl_cfg:ToddlerBotPPORunnerCfg",
   },
 )
 
 gym.register(
-  id="mjlab_velocity_flat_toddlerbot_2xc_play",
+  id="Mjlab-Velocity-Flat-ToddlerBot-2xc-Play",
   entry_point="mjlab.envs:ManagerBasedRlEnv",
   disable_env_checker=True,
   kwargs={
     "env_cfg_entry_point": f"{__name__}.flat_env_cfg:ToddlerBotFlatEnvCfg_PLAY",
-    "rl_cfg_entry_point": f"{__name__}.rl_cfg:ToddlerBotFlatPPORunnerCfg",
+    "rl_cfg_entry_point": f"{__name__}.rl_cfg:ToddlerBotPPORunnerCfg",
   },
 )
